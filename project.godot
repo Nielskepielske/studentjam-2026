@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="DrunkTest"
-run/main_scene="uid://yyupjhbpkhjr"
+run/main_scene="uid://e300hobmbbfg"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Globals="*uid://b5q63d0u8s48j"
 ItemRegistry="*uid://cqd47nugr30es"
+PlayerData="*uid://v4hwgyt7raiq"
 
 [dotnet]
 
