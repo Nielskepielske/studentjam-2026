@@ -13,15 +13,16 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		audio_stream_player_2d.play()
-		var vel = calc_jump(Globals.MAX_JUMP_VELOCITY)
+		var vel = DrunkenMovement.currentJumpSpeed
 		velocity.y = -vel
+		PlayerData.update_naussea(Globals.NAUSSEA_JUMP)
 	# Get the input direction and handle the movement/deceleration.
 	var direction := Input.get_axis("move_left", "move_right")
-	var drunk_speed = calc_speed(Globals.MAX_VELOCITY)
 	if direction:
-		velocity.x = direction * drunk_speed
+		velocity.x = direction * DrunkenMovement.currentSpeed
+		PlayerData.update_naussea(Globals.NAUSSEA_MOVE)
 	else:
-		velocity.x = move_toward(velocity.x, 0, drunk_speed)
+		velocity.x = move_toward(velocity.x, 0, DrunkenMovement.currentSpeed)
 	move_and_slide()
 	if direction < 0: 
 		animated_sprite_2d.flip_h = true
@@ -67,13 +68,3 @@ func use_item():
 	print("use item")
 	if not inventory or not inventory.item:
 		return null
-	inventory.item.behavior.use($".")
-
-
-func calc_speed(vel : float) -> float:
-	var y = vel * vel / (12*Globals.DRUNK)
-	return min(vel, y)
-	
-func calc_jump(vel : float) -> float:
-	var y = vel - Globals.DRUNK
-	return min(vel, y)

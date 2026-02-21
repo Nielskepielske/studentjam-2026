@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Globals="*uid://b5q63d0u8s48j"
 PlayerData="*uid://v4hwgyt7raiq"
 ItemRegistry="*uid://clnm6sed0qter"
+DrunkenMovement="*uid://m4jujrhi51uh"
 
 [display]
 

@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bvmrvpcnf601t" path="res://assets/images/items/beer-texture-top_1/sprite_2.png" id="5_5fxmh"]
 [ext_resource type="Texture2D" uid="uid://c6sqyilexrio4" path="res://assets/images/items/beer-texture-top_1/sprite_3.png" id="6_evydn"]
 [ext_resource type="Texture2D" uid="uid://dpkhb1vre0g4h" path="res://assets/images/items/beer-texture-top_1/sprite_4.png" id="7_whggb"]
+[ext_resource type="Script" uid="uid://vllxi1u6siwk" path="res://scripts/items/pukebar.gd" id="8_kcdfc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87cwy"]
 bg_color = Color(0, 0, 0, 1)
@@ -123,11 +124,7 @@ text = "Score"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Timer" type="Timer" parent="." unique_id=751180518]
-wait_time = 0.105
-
-[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1464784244]
-layout_mode = 1
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer" unique_id=1464784244]
 anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
@@ -138,17 +135,17 @@ grow_vertical = 2
 theme_override_constants/margin_top = 100
 theme_override_constants/margin_right = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2" unique_id=812500518]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer2" unique_id=812500518]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Control" type="Control" parent="MarginContainer2/VBoxContainer" unique_id=536004648]
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer2/VBoxContainer" unique_id=536004648]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="pukebar" type="TextureProgressBar" parent="MarginContainer2/VBoxContainer/Control" unique_id=1692430671]
+[node name="pukebar" type="TextureProgressBar" parent="CanvasLayer/MarginContainer2/VBoxContainer/Control" unique_id=1692430671]
 texture_filter = 1
 custom_minimum_size = Vector2(5, 100)
 layout_mode = 1
@@ -169,5 +166,9 @@ value = 40.0
 fill_mode = 3
 texture_progress = SubResource("AnimatedTexture_b81ob")
 texture_progress_offset = Vector2(-1.03, -0.02)
+script = ExtResource("8_kcdfc")
+
+[node name="Timer" type="Timer" parent="." unique_id=751180518]
+wait_time = 0.105
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
