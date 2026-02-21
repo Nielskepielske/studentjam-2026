@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cvjubj78du8pf" path="res://scenes/player/player.tscn" id="10_cyy7t"]
 [ext_resource type="PackedScene" uid="uid://boaac6c42io6p" path="res://scenes/ui/screen_overlay.tscn" id="11_1x4hw"]
 [ext_resource type="AudioStream" uid="uid://cxvrfgj0qkv2y" path="res://assets/sound/music/ebutv_WhatsApp Audio 2026-02-21 at 11.44.35.mp3" id="13_84vya"]
+[ext_resource type="PackedScene" uid="uid://cox57ujy2mxvk" path="res://scenes/obstacle/glassShard.tscn" id="14_cw4as"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kmhl"]
 texture = ExtResource("7_l8ohl")
@@ -627,3 +628,7 @@ position = Vector2(74, 427)
 stream = ExtResource("13_84vya")
 volume_db = -6.783
 parameters/looping = true
+
+[node name="GlassShard" parent="." unique_id=638677664 instance=ExtResource("14_cw4as")]
+position = Vector2(436.99997, 451)
+scale = Vector2(2.5, 2.5)
