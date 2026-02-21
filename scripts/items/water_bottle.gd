@@ -1,20 +1,33 @@
 extends Area2D
 
-signal player_hit_drink
-
-@export var item : Inventory
+@export var inv: Inventory
+var player = null
+var player_in_range = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	if inv:
+		inv = inv.duplicate()
+	
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("interact") and player_in_range:
+		pick_up()
+		queue_free()
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
-		emit_signal("player_hit_drink", body, -10)
-		
-		
+		player_in_range = true
+		player = body
+
+func _on_body_exited(body: Node2D) -> void:
+	if body.name == "Player":
+		player_in_range = false
+		player = null
+
+
+## Player picks up the water bottle from the ground
+func pick_up() -> void:
+	print("pick up water")
+	if inv and inv.item:
+		player.collect_item(inv.item)
+		inv.item = null
