@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://3484i3w2v6u3"]
 
-[ext_resource type="Script" uid="uid://ccaa0c3t2dvub" path="res://scripts/water_bottle.gd" id="1_bkd3t"]
+[ext_resource type="Script" uid="uid://ccaa0c3t2dvub" path="res://scripts/items/water_bottle.gd" id="1_bkd3t"]
+[ext_resource type="Resource" uid="uid://cbpvkyauq5pev" path="res://resources/inventory/water_inv.tres" id="2_hogj7"]
 [ext_resource type="Texture2D" uid="uid://cfkaiy43qnl88" path="res://assets/images/items/Water_Bottle.png" id="2_xb6wx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lnc1p"]
@@ -8,6 +9,7 @@ size = Vector2(44, 96)
 
 [node name="WaterBottle" type="Area2D" unique_id=1037889664]
 script = ExtResource("1_bkd3t")
+item = ExtResource("2_hogj7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1825244962]
 texture_filter = 1

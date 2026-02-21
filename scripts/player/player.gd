@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+@export var inventory: Inventory
+
 func _physics_process(delta: float) -> void:
 	set_animation()
 	

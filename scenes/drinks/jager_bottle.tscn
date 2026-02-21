@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b7xm2by84earb"]
 
-[ext_resource type="Script" uid="uid://bw0o6onsqeem7" path="res://scripts/jager_bottle.gd" id="1_ewhqk"]
+[ext_resource type="Script" uid="uid://bw0o6onsqeem7" path="res://scripts/drinks/jager_bottle.gd" id="1_ewhqk"]
 [ext_resource type="Texture2D" uid="uid://bpfb52jb8uxoi" path="res://assets/images/items/Jagermeister.png" id="2_ewhqk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lnc1p"]

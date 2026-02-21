@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dnbqxbixj3sqm"]
 
 [ext_resource type="Texture2D" uid="uid://d0icrndl8msr1" path="res://assets/images/player/male_hero_template-idle.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://coa0ivtsybymw" path="res://scripts/player.gd" id="1_qhqgy"]
+[ext_resource type="Script" uid="uid://coa0ivtsybymw" path="res://scripts/player/player.gd" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://du67gn607wjcm" path="res://assets/images/player/male_hero_template-run.png" id="2_g2els"]
 [ext_resource type="Texture2D" uid="uid://ba4txo17rv11y" path="res://assets/images/player/male_hero_template-fall_loop.png" id="2_qlg0r"]
+[ext_resource type="Resource" uid="uid://dlmsfu5st6cuv" path="res://resources/inventory/player_inventory.tres" id="2_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://kjolvhijjkio" path="res://assets/images/player/male_hero_template-jump.png" id="4_tuyoq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a38lo"]
@@ -224,6 +225,7 @@ size = Vector2(15.666668, 31.333336)
 [node name="Player" type="CharacterBody2D" unique_id=119751248]
 scale = Vector2(3, 3)
 script = ExtResource("1_qhqgy")
+inventory = ExtResource("2_tuyoq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=326393493]
 texture_filter = 1
