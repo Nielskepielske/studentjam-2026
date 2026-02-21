@@ -49,6 +49,8 @@ func collect_item(item : InvItem):
 	if inventory.item:
 		drop_item()
 	inventory.item = item
+	PlayerData.held_item = item.texture
+	print("done swapping item")
 	
 func drop_item():
 	if not inventory or not inventory.item:
@@ -58,6 +60,7 @@ func drop_item():
 		instance.position = global_position + Vector2(0, 0)
 		get_parent().add_child(instance)
 	inventory.item = null
+	PlayerData.held_item = null
 
 func use_item():
 	if not inventory or not inventory.item:
