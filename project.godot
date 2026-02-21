@@ -23,6 +23,10 @@ Globals="*uid://b5q63d0u8s48j"
 
 project/assembly_name="DrunkTest"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-vim/plugin.cfg")
+
 [input]
 
 move_left={

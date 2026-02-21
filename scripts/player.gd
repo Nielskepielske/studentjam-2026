@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
-
 func _physics_process(delta: float) -> void:
 	set_animation()
 	
@@ -12,7 +11,7 @@ func _physics_process(delta: float) -> void:
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		var vel = calc_speed(Globals.MAX_JUMP_VELOCITY)
+		var vel = calc_jump(Globals.MAX_JUMP_VELOCITY)
 		velocity.y = -vel
 
 	# Get the input direction and handle the movement/deceleration.
@@ -47,3 +46,6 @@ func calc_speed(vel : float) -> float:
 	var y = vel * vel / (12*Globals.DRUNK)
 	return min(vel, y)
 	
+func calc_jump(vel : float) -> float:
+	var y = vel - Globals.DRUNK
+	return min(vel, y)
