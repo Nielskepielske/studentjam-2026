@@ -51,10 +51,12 @@ follow_viewport_enabled = true
 
 [node name="Parallax2D" type="Parallax2D" parent="Panel/CanvasLayer" unique_id=660333750]
 z_index = -5
+texture_filter = 1
 scale = Vector2(2, 2)
 scroll_offset = Vector2(576, 322)
 repeat_size = Vector2(576, 0)
 repeat_times = 25
+ignore_camera_scroll = true
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/CanvasLayer/Parallax2D" unique_id=730952075]
@@ -102,5 +104,11 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_rcqid")
 text = "Start game
 "
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1176492071]
+texture_filter = 1
+anchor_mode = 0
+limit_enabled = false
+editor_draw_limits = true
 
 [connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_start_pressed"]
