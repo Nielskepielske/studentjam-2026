@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://cp5w8etyr3hop"]
+
+[ext_resource type="Resource" uid="uid://2akq4j62hyp0" path="res://resources/inventory/energy_beh.tres" id="1_7i1ly"]
+[ext_resource type="Script" uid="uid://cbauwp0cxyau" path="res://scripts/items/item.gd" id="1_fnai3"]
+[ext_resource type="Texture2D" uid="uid://c6m6ca231hsa8" path="res://assets/images/items/energy_can.png" id="2_7i1ly"]
+
+[resource]
+script = ExtResource("1_fnai3")
+name = "EnergyBottle"
+texture = ExtResource("2_7i1ly")
+behavior = ExtResource("1_7i1ly")
+metadata/_custom_type_script = "uid://cbauwp0cxyau"

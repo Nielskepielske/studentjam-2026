@@ -1,7 +1,5 @@
 extends Area2D
 
-signal player_hit_drink
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -13,4 +11,6 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
-		emit_signal("player_hit_drink", body, 30)
+		#emit_signal("player_hit_drink", body, 30)
+		Globals.add_to_drunk_state(30)
+		queue_free()
