@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvyt8kwsqfpsl"
-path="res://.godot/imported/male_hero_template-design.png-2620c0e3a085573d51e2c270d9711388.ctex"
+uid="uid://dfsqg8ft0ahhp"
+path="res://.godot/imported/male_hero_template-walk.png-aec8fad864a322e6c67807ef0f93dc6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/player/male_hero_template-design.png"
-dest_files=["res://.godot/imported/male_hero_template-design.png-2620c0e3a085573d51e2c270d9711388.ctex"]
+source_file="res://assets/images/player/placeholder/male_hero_template-walk.png"
+dest_files=["res://.godot/imported/male_hero_template-walk.png-aec8fad864a322e6c67807ef0f93dc6b.ctex"]
 
 [params]
 

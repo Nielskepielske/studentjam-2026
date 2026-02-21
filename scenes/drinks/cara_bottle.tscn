@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dymvdkikfa2pe"]
 
-[ext_resource type="Script" uid="uid://ofcahm8af1nu" path="res://scripts/cara_bottle.gd" id="1_egf2b"]
+[ext_resource type="Script" uid="uid://ofcahm8af1nu" path="res://scripts/drinks/cara_bottle.gd" id="1_egf2b"]
 [ext_resource type="Texture2D" uid="uid://e2pq33eutfow" path="res://assets/images/items/Cara_Pils.png" id="2_x8sww"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lnc1p"]

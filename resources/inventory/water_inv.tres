@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Inventory" format=3 uid="uid://cbpvkyauq5pev"]
+
+[ext_resource type="Resource" uid="uid://6qfdgxsyh7fc" path="res://resources/inventory/water_res.tres" id="1_gp7si"]
+[ext_resource type="Script" uid="uid://gbp0o4cftahf" path="res://scripts/items/inventory.gd" id="2_61i4i"]
+
+[resource]
+script = ExtResource("2_61i4i")
+item = ExtResource("1_gp7si")
+metadata/_custom_type_script = "uid://gbp0o4cftahf"
