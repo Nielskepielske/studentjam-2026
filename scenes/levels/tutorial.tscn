@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b5jhuo2kkqany" path="res://assets/images/general.png" id="7_l8ohl"]
 [ext_resource type="Texture2D" uid="uid://mevk2cqtphg6" path="res://assets/images/tiles.png" id="8_wr5d5"]
 [ext_resource type="PackedScene" uid="uid://3484i3w2v6u3" path="res://scenes/items/water_bottle.tscn" id="9_q462l"]
-[ext_resource type="PackedScene" uid="uid://dnbqxbixj3sqm" path="res://scenes/player.tscn" id="10_cyy7t"]
+[ext_resource type="PackedScene" uid="uid://cvjubj78du8pf" path="res://scenes/player/player.tscn" id="10_cyy7t"]
 [ext_resource type="PackedScene" uid="uid://boaac6c42io6p" path="res://scenes/ui/screen_overlay.tscn" id="11_1x4hw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kmhl"]
