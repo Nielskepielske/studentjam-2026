@@ -12,6 +12,9 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gmmtd"]
+bg_color = Color(0, 0, 0, 1)
+
 [node name="Screen overlay" type="Control" unique_id=173588181]
 layout_mode = 3
 anchors_preset = 15
@@ -29,6 +32,7 @@ anchor_right = 1.0
 grow_horizontal = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=1033911318]
 layout_mode = 2
@@ -38,14 +42,14 @@ layout_mode = 2
 theme_override_constants/separation = 49
 
 [node name="Panel" type="Panel" parent="CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=38234640]
-custom_minimum_size = Vector2(128, 128)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_87cwy")
 metadata/_edit_group_ = true
 
 [node name="avatar" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Panel" unique_id=671568312]
 texture_filter = 1
-custom_minimum_size = Vector2(128, 128)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_right = 64.0
 offset_bottom = 64.0
@@ -56,3 +60,46 @@ texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "Name"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/MarginContainer/HBoxContainer" unique_id=526234378]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_stretch_ratio = 2.7
+theme_override_constants/separation = 42
+alignment = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer2" unique_id=1864957571]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="lblDrunkness" type="Label" parent="CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer2/Panel" unique_id=1309600986]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_gmmtd")
+text = "Drunk"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer2" unique_id=1604022441]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="lblScore" type="Label" parent="CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer2/Panel2" unique_id=1137326305]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_gmmtd")
+text = "Score"
+horizontal_alignment = 1
+vertical_alignment = 1
