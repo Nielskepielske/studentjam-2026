@@ -118,10 +118,9 @@ inventory = ExtResource("2_75vfm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=326393493]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_3v2ag")
-animation = &"running"
+animation = &"falling"
 autoplay = "idle"
-frame = 1
-frame_progress = 0.6664037
+frame_progress = 0.93696254
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1197336644]
 position = Vector2(-0.83333373, 4.7683716e-07)

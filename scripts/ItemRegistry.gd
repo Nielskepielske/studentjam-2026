@@ -3,7 +3,8 @@ extends Node
 ## Lijst van items die preloaded worden. 
 ## Ge gebruikt de name van een InvItem om ze te getten
 const ITEMS = {
-	"WaterBottle": preload("res://scenes/items/water_bottle.tscn")
+	"WaterBottle": preload("res://scenes/items/water_bottle.tscn"),
+	"EnergyBottle": preload("res://scenes/items/energy_bottle.tscn")
 }
 
 ## Instantiates an inventory item's scene
