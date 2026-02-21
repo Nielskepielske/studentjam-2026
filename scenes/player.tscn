@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://dn7nvjvxe7cut"]
+[gd_scene format=3 uid="uid://dnbqxbixj3sqm"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_qhqgy"]
+[ext_resource type="Script" uid="uid://coa0ivtsybymw" path="res://scripts/player/player.gd" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://cedrjonx01xil" path="res://assets/images/player/mp_character_animation_asset_pack_v1.0/mp_character_animation_asset_pack_v1.0/Exported PNGs/Male/Character 1/Clothes 1/Character1M_1_land_0.png" id="2_i4ail"]
 [ext_resource type="Texture2D" uid="uid://dixuq03gjc241" path="res://assets/images/player/mp_character_animation_asset_pack_v1.0/mp_character_animation_asset_pack_v1.0/Exported PNGs/Male/Character 1/Clothes 1/Character1M_1_land_1.png" id="3_a38lo"]
 [ext_resource type="Texture2D" uid="uid://xljgu66l3lnp" path="res://assets/images/player/mp_character_animation_asset_pack_v1.0/mp_character_animation_asset_pack_v1.0/Exported PNGs/Male/Character 1/Clothes 1/Character1M_1_idle_0.png" id="4_4ni07"]
