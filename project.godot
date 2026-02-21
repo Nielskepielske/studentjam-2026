@@ -21,6 +21,11 @@ Globals="*uid://b5q63d0u8s48j"
 PlayerData="*uid://v4hwgyt7raiq"
 ItemRegistry="*uid://clnm6sed0qter"
 
+[display]
+
+window/size/mode=3
+window/stretch/mode="viewport"
+
 [dotnet]
 
 project/assembly_name="DrunkTest"
