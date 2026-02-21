@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://yyupjhbpkhjr"]
+
+[ext_resource type="Script" uid="uid://demx5nkg8a1qy" path="res://scripts/main_scene.gd" id="1_pu3yx"]
+[ext_resource type="PackedScene" uid="uid://dnbqxbixj3sqm" path="res://scenes/player.tscn" id="1_w2twt"]
+[ext_resource type="Texture2D" uid="uid://bo677cgrahu7y" path="res://icon.svg" id="2_pw63i"]
+[ext_resource type="PackedScene" uid="uid://b3w88vkitrxcr" path="res://scenes/policeman.tscn" id="3_7ykc4"]
+[ext_resource type="Script" uid="uid://ds6cx7xpo864k" path="res://scripts/drunkMeterLabel.gd" id="4_pu3yx"]
+[ext_resource type="Script" uid="uid://cob7ww2qu5ig0" path="res://scripts/drunk_system.gd" id="5_gubc5"]
+[ext_resource type="PackedScene" uid="uid://b7xm2by84earb" path="res://scenes/drinks/jager_bottle.tscn" id="7_c16ls"]
+[ext_resource type="PackedScene" uid="uid://3484i3w2v6u3" path="res://scenes/items/water_bottle.tscn" id="8_18nlu"]
+[ext_resource type="PackedScene" uid="uid://dymvdkikfa2pe" path="res://scenes/drinks/cara_bottle.tscn" id="8_c1pb6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ykc4"]
+size = Vector2(286, 126)
+
+[node name="MainScene" type="Node2D" unique_id=977417440]
+script = ExtResource("1_pu3yx")
+
+[node name="Player" parent="." unique_id=119751248 instance=ExtResource("1_w2twt")]
+position = Vector2(526, 304)
+
+[node name="Platform" type="StaticBody2D" parent="." unique_id=413297387]
+position = Vector2(944, 465)
+scale = Vector2(5, 1)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform" unique_id=822223344]
+position = Vector2(-79.5, 0)
+scale = Vector2(2.2421875, 1)
+texture = ExtResource("2_pw63i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=483422928]
+position = Vector2(-80, 0)
+shape = SubResource("RectangleShape2D_7ykc4")
+
+[node name="DrunkMeterLabel" type="Label" parent="." unique_id=1089278307]
+offset_left = 33.0
+offset_top = 25.0
+offset_right = 118.0
+offset_bottom = 48.0
+text = "hello there"
+script = ExtResource("4_pu3yx")
+
+[node name="DrunkSystem" type="Node2D" parent="." unique_id=531035459]
+script = ExtResource("5_gubc5")
+
+[node name="Enemies" type="Node2D" parent="." unique_id=624690425]
+
+[node name="Policeman" parent="Enemies" unique_id=1217591200 instance=ExtResource("3_7ykc4")]
+position = Vector2(143, 352)
+
+[node name="Policeman2" parent="Enemies" unique_id=430091828 instance=ExtResource("3_7ykc4")]
+position = Vector2(1094, 352)
+
+[node name="Bottles" type="Node2D" parent="." unique_id=1449558318]
+
+[node name="JagerBottle" parent="Bottles" unique_id=1037889664 instance=ExtResource("7_c16ls")]
+position = Vector2(294, 394)
+
+[node name="CaraBottle" parent="Bottles" unique_id=2114759669 instance=ExtResource("8_c1pb6")]
+position = Vector2(451, 396)
+
+[node name="Items" type="Node2D" parent="." unique_id=493709459]
+
+[node name="WaterBottle" parent="Items" unique_id=805629971 instance=ExtResource("8_18nlu")]
+position = Vector2(728, 347)

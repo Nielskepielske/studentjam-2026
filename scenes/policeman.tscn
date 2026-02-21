@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b3w88vkitrxcr"]
+
+[ext_resource type="Script" uid="uid://bvg30f78hu753" path="res://scripts/policeman.gd" id="1_2q8bx"]
+[ext_resource type="Texture2D" uid="uid://bvyt8kwsqfpsl" path="res://assets/images/player/male_hero_template-design.png" id="1_n441t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q8bx"]
+size = Vector2(48, 96)
+
+[node name="Policeman" type="Area2D" unique_id=430091828]
+script = ExtResource("1_2q8bx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2102635689]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_n441t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1536984489]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_2q8bx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

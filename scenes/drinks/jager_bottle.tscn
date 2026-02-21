@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b7xm2by84earb"]
+
+[ext_resource type="Script" uid="uid://bw0o6onsqeem7" path="res://scripts/jager_bottle.gd" id="1_ewhqk"]
+[ext_resource type="Texture2D" uid="uid://bpfb52jb8uxoi" path="res://assets/images/items/Jagermeister.png" id="2_ewhqk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnc1p"]
+size = Vector2(44, 96)
+
+[node name="JagerBottle" type="Area2D" unique_id=1037889664]
+script = ExtResource("1_ewhqk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1825244962]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_ewhqk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1989019195]
+shape = SubResource("RectangleShape2D_lnc1p")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
