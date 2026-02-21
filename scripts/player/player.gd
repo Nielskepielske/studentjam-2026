@@ -29,6 +29,9 @@ func _physics_process(delta: float) -> void:
 	# handle drop
 	if Input.is_action_just_pressed("drop_item"):
 		drop_item()
+		
+	if Input.is_action_just_pressed("use_item"):
+		use_item()
 
 func set_animation():
 	if velocity.y > 1:
@@ -57,7 +60,13 @@ func drop_item():
 		instance.position = global_position + Vector2(0, 0)
 		get_parent().add_child(instance)
 	inventory.item = null
-	
+
+func use_item():
+	print("use item")
+	if not inventory or not inventory.item:
+		return null
+	inventory.item.behavior.use($".")
+
 
 func calc_speed(vel : float) -> float:
 	var y = vel * vel / (12*Globals.DRUNK)
