@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @export var inventory: Inventory
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 func _physics_process(delta: float) -> void:
 	set_animation()
@@ -11,6 +12,7 @@ func _physics_process(delta: float) -> void:
 	
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		audio_stream_player_2d.play()
 		var vel = calc_jump(Globals.MAX_JUMP_VELOCITY)
 		velocity.y = -vel
 	# Get the input direction and handle the movement/deceleration.
