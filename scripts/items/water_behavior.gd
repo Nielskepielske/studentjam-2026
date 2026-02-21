@@ -1,7 +1,6 @@
 class_name WaterBehavior
 extends ItemBehavior
 
+var value : float = 0.1
 func use(player:Node)->void:
-	print("drinking water")
-	print(player)
-	Globals.remove_from_drunk_with_water()
+	DrunkenMovement.remove_from_drunk(value)

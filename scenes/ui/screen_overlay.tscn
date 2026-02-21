@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://cawgrqcavmjg3" path="res://scripts/ui/screen_overlay.gd" id="1_87cwy"]
 [ext_resource type="Texture2D" uid="uid://cfkaiy43qnl88" path="res://assets/images/items/Water_Bottle.png" id="3_gmmtd"]
-[ext_resource type="Texture2D" uid="uid://xljgu66l3lnp" path="res://assets/images/player/mp_character_animation_asset_pack_v1.0/mp_character_animation_asset_pack_v1.0/Exported PNGs/Male/Character 1/Clothes 1/Character1M_1_idle_0.png" id="1_qsjth"]
 [ext_resource type="Texture2D" uid="uid://lcamy63hr6xn" path="res://assets/images/items/beer-texture-top_1/sprite_0.png" id="3_kmi2i"]
 [ext_resource type="Texture2D" uid="uid://cwlkbamb67xt2" path="res://assets/images/items/beer-texture-top_1/sprite_1.png" id="4_kcdfc"]
 [ext_resource type="Texture2D" uid="uid://bvmrvpcnf601t" path="res://assets/images/items/beer-texture-top_1/sprite_2.png" id="5_5fxmh"]
@@ -26,6 +25,7 @@ load_path = "res://.godot/imported/Character1M_1_idle_0.png-37c7acaed76daee96598
 bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gmmtd"]
+
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_b81ob"]
 frames = 5
 speed_scale = 5.6
@@ -163,11 +163,8 @@ layout_mode = 0
 offset_right = 64.0
 offset_bottom = 64.0
 texture = ExtResource("3_gmmtd")
-[node name="Timer" type="Timer" parent="." unique_id=751180518]
-wait_time = 0.105
 
-[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1464784244]
-layout_mode = 1
+[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer" unique_id=1464784244]
 anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
@@ -178,17 +175,17 @@ grow_vertical = 2
 theme_override_constants/margin_top = 100
 theme_override_constants/margin_right = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer2" unique_id=812500518]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer3" unique_id=812500518]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Control" type="Control" parent="CanvasLayer/MarginContainer2/VBoxContainer" unique_id=536004648]
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer3/VBoxContainer" unique_id=536004648]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="pukebar" type="TextureProgressBar" parent="CanvasLayer/MarginContainer2/VBoxContainer/Control" unique_id=1692430671]
+[node name="pukebar" type="TextureProgressBar" parent="CanvasLayer/MarginContainer3/VBoxContainer/Control" unique_id=1692430671]
 texture_filter = 1
 custom_minimum_size = Vector2(5, 100)
 layout_mode = 1

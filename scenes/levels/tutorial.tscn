@@ -12,9 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://3484i3w2v6u3" path="res://scenes/items/water_bottle.tscn" id="9_q462l"]
 [ext_resource type="PackedScene" uid="uid://cvjubj78du8pf" path="res://scenes/player/player.tscn" id="10_cyy7t"]
 [ext_resource type="PackedScene" uid="uid://boaac6c42io6p" path="res://scenes/ui/screen_overlay.tscn" id="11_1x4hw"]
-[ext_resource type="PackedScene" uid="uid://dpw4nh2eqm233" path="res://scenes/items/energy_bottle.tscn" id="11_cw4as"]
 [ext_resource type="AudioStream" uid="uid://cxvrfgj0qkv2y" path="res://assets/sound/music/ebutv_WhatsApp Audio 2026-02-21 at 11.44.35.mp3" id="13_84vya"]
 [ext_resource type="PackedScene" uid="uid://cox57ujy2mxvk" path="res://scenes/obstacle/glassShard.tscn" id="14_cw4as"]
+[ext_resource type="PackedScene" uid="uid://b7xm2by84earb" path="res://scenes/obstacle/jager_bottle.tscn" id="16_uy53l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kmhl"]
 texture = ExtResource("7_l8ohl")
@@ -577,6 +577,8 @@ sources/1 = SubResource("TileSetAtlasSource_cq4me")
 [node name="Tutorial" type="Node2D" unique_id=1827067687]
 script = ExtResource("1_uu0hj")
 
+[node name="Screen overlay" parent="." unique_id=173588181 instance=ExtResource("11_1x4hw")]
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1080282334]
 layer = -1
 follow_viewport_enabled = true
@@ -622,16 +624,8 @@ limit_left = 0
 limit_bottom = 750
 position_smoothing_enabled = true
 
-[node name="WaterBottle" parent="." unique_id=1037889664 instance=ExtResource("9_q462l")]
-position = Vector2(305, 485)
-
-[node name="EnergyBottle" parent="." unique_id=305030583 instance=ExtResource("11_cw4as")]
-position = Vector2(817, 582)
-
 [node name="Player" parent="." unique_id=119751248 instance=ExtResource("10_cyy7t")]
 position = Vector2(74, 427)
-
-[node name="Screen overlay" parent="." unique_id=173588181 instance=ExtResource("11_1x4hw")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1426525697]
 stream = ExtResource("13_84vya")
@@ -641,3 +635,9 @@ parameters/looping = true
 [node name="GlassShard" parent="." unique_id=638677664 instance=ExtResource("14_cw4as")]
 position = Vector2(436.99997, 451)
 scale = Vector2(2.5, 2.5)
+
+[node name="JagerBottle" parent="." unique_id=1505495462 instance=ExtResource("16_uy53l")]
+position = Vector2(167, 564)
+
+[node name="WaterBottle" parent="." unique_id=1037889664 instance=ExtResource("9_q462l")]
+position = Vector2(293, 565)

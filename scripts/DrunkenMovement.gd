@@ -46,3 +46,6 @@ func stun() -> void:
 func _on_timer_timout() -> void:
 	PlayerData.reset_naussea()
 	stunned = false
+	
+func remove_from_drunk(val: float)->void:
+	drunkAmount = max(0, drunkAmount - val)

@@ -65,4 +65,6 @@ func drop_item():
 
 func use_item():
 	if not inventory or not inventory.item:
+		print("use1")
 		return null
+	inventory.item.behavior.use($".")
