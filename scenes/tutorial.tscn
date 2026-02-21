@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cgxuvv5jago8w" path="res://assets/images/craftpix-net-846754-free-green-zone-tileset-pixel-art/2 Background/Night/3.png" id="5_nlqja"]
 [ext_resource type="Texture2D" uid="uid://0ebspkljbcy3" path="res://assets/images/craftpix-net-846754-free-green-zone-tileset-pixel-art/2 Background/Night/4.png" id="6_0epgs"]
 [ext_resource type="Texture2D" uid="uid://bhffi3evbvvfj" path="res://assets/images/craftpix-net-846754-free-green-zone-tileset-pixel-art/2 Background/Night/5.png" id="7_g2equ"]
-[ext_resource type="PackedScene" uid="uid://dnbqxbixj3sqm" path="res://scenes/player.tscn" id="8_ckvwl"]
+[ext_resource type="PackedScene" uid="uid://cvjubj78du8pf" path="res://scenes/player/player.tscn" id="8_ckvwl"]
 [ext_resource type="PackedScene" uid="uid://3484i3w2v6u3" path="res://scenes/items/water_bottle.tscn" id="9_0epgs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kmhl"]

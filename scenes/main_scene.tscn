@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://yyupjhbpkhjr"]
 
-[ext_resource type="Script" uid="uid://demx5nkg8a1qy" path="res://scripts_1/main_scene.gd" id="1_pu3yx"]
-[ext_resource type="PackedScene" uid="uid://dnbqxbixj3sqm" path="res://scenes/player.tscn" id="1_w2twt"]
+[ext_resource type="Script" uid="uid://demx5nkg8a1qy" path="res://scripts/main_scene.gd" id="1_pu3yx"]
+[ext_resource type="PackedScene" uid="uid://cvjubj78du8pf" path="res://scenes/player/player.tscn" id="1_w2twt"]
 [ext_resource type="Texture2D" uid="uid://bo677cgrahu7y" path="res://icon.svg" id="2_pw63i"]
 [ext_resource type="PackedScene" uid="uid://b3w88vkitrxcr" path="res://scenes/policeman.tscn" id="3_7ykc4"]
 [ext_resource type="Script" uid="uid://ds6cx7xpo864k" path="res://scripts/drunkMeterLabel.gd" id="4_pu3yx"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5vaqpod6awl1"
-path="res://.godot/imported/male_hero_template-combo_1.png-44bf27fe221e759c0b1d0162c2cfdda2.ctex"
+uid="uid://d0icrndl8msr1"
+path="res://.godot/imported/male_hero_template-idle.png-0b926b472b337f9c9d775ae0756cfa52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/player/male_hero_template-combo_1.png"
-dest_files=["res://.godot/imported/male_hero_template-combo_1.png-44bf27fe221e759c0b1d0162c2cfdda2.ctex"]
+source_file="res://assets/images/player/placeholder/male_hero_template-idle.png"
+dest_files=["res://.godot/imported/male_hero_template-idle.png-0b926b472b337f9c9d775ae0756cfa52.ctex"]
 
 [params]
 

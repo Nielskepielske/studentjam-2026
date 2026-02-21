@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b3w88vkitrxcr"]
 
 [ext_resource type="Script" uid="uid://bvg30f78hu753" path="res://scripts/policeman.gd" id="1_2q8bx"]
-[ext_resource type="Texture2D" uid="uid://bvyt8kwsqfpsl" path="res://assets/images/player/male_hero_template-design.png" id="1_n441t"]
+[ext_resource type="Texture2D" uid="uid://bvyt8kwsqfpsl" path="res://assets/images/player/placeholder/male_hero_template-design.png" id="1_n441t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2q8bx"]
 size = Vector2(48, 96)
