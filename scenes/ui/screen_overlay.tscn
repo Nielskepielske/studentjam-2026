@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://boaac6c42io6p"]
 
 [ext_resource type="Script" uid="uid://cawgrqcavmjg3" path="res://scripts/ui/screen_overlay.gd" id="1_87cwy"]
+[ext_resource type="Texture2D" uid="uid://cfkaiy43qnl88" path="res://assets/images/items/Water_Bottle.png" id="3_gmmtd"]
 [ext_resource type="Texture2D" uid="uid://xljgu66l3lnp" path="res://assets/images/player/mp_character_animation_asset_pack_v1.0/mp_character_animation_asset_pack_v1.0/Exported PNGs/Male/Character 1/Clothes 1/Character1M_1_idle_0.png" id="1_qsjth"]
 [ext_resource type="Texture2D" uid="uid://lcamy63hr6xn" path="res://assets/images/items/beer-texture-top_1/sprite_0.png" id="3_kmi2i"]
 [ext_resource type="Texture2D" uid="uid://cwlkbamb67xt2" path="res://assets/images/items/beer-texture-top_1/sprite_1.png" id="4_kcdfc"]
@@ -18,9 +19,13 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_87cwy"]
+load_path = "res://.godot/imported/Character1M_1_idle_0.png-37c7acaed76daee965985e43cc3c2d74.ctex"
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gmmtd"]
 bg_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gmmtd"]
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_b81ob"]
 frames = 5
 speed_scale = 5.6
@@ -47,6 +52,7 @@ script = ExtResource("1_87cwy")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=238035717]
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=655863827]
+z_index = 1
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
@@ -73,7 +79,7 @@ custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_right = 64.0
 offset_bottom = 64.0
-texture = ExtResource("1_qsjth")
+texture = SubResource("CompressedTexture2D_87cwy")
 
 [node name="lblName" type="Label" parent="CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1042979272]
 texture_filter = 1
@@ -124,7 +130,44 @@ text = "Score"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer" unique_id=1464784244]
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer" unique_id=1046752656]
+z_index = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = 507.0
+offset_right = 1.0
+offset_bottom = 627.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer2" unique_id=107760637]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer2/HBoxContainer" unique_id=1505262901]
+layout_mode = 2
+theme_override_constants/separation = 49
+
+[node name="Panel" type="Panel" parent="CanvasLayer/MarginContainer2/HBoxContainer/HBoxContainer" unique_id=1086595544]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_gmmtd")
+metadata/_edit_group_ = true
+
+[node name="held_item" type="TextureRect" parent="CanvasLayer/MarginContainer2/HBoxContainer/HBoxContainer/Panel" unique_id=1664078334]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("3_gmmtd")
+[node name="Timer" type="Timer" parent="." unique_id=751180518]
+wait_time = 0.105
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1464784244]
+layout_mode = 1
 anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0

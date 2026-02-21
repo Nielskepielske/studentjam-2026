@@ -25,9 +25,8 @@ func _on_body_exited(body: Node2D) -> void:
 		player = null
 
 
-## Player picks up the water bottle from the ground
+## Player picks up the an item from the ground
 func pick_up() -> void:
-	print("pick up water")
 	if inv and inv.item:
 		player.collect_item(inv.item)
 		inv.item = null

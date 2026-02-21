@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://b7xm2by84earb" path="res://scenes/drinks/jager_bottle.tscn" id="7_c16ls"]
 [ext_resource type="PackedScene" uid="uid://3484i3w2v6u3" path="res://scenes/items/water_bottle.tscn" id="8_18nlu"]
 [ext_resource type="PackedScene" uid="uid://dymvdkikfa2pe" path="res://scenes/drinks/cara_bottle.tscn" id="8_c1pb6"]
-[ext_resource type="PackedScene" uid="uid://bevkoel8ae88l" path="res://ui/inventory_slot.tscn" id="10_6wevv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ykc4"]
 size = Vector2(286, 126)
@@ -66,9 +65,3 @@ position = Vector2(451, 396)
 [node name="WaterBottle" parent="Items" unique_id=805629971 instance=ExtResource("8_18nlu")]
 visible = false
 position = Vector2(728, 347)
-
-[node name="InventorySlot" parent="." unique_id=1918016296 instance=ExtResource("10_6wevv")]
-offset_left = 1083.0
-offset_top = 107.0
-offset_right = 1083.0
-offset_bottom = 107.0

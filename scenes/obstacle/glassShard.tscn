@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cox57ujy2mxvk"]
+
+[ext_resource type="Texture2D" uid="uid://dg73tk4clphme" path="res://assets/images/obstacles/glass_Shard_sprites.png" id="1_qkeq4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gou0j"]
+size = Vector2(32, 5)
+
+[node name="GlassShard" type="Area2D" unique_id=1254434794]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=787960252]
+texture_filter = 1
+texture = ExtResource("1_qkeq4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=723180160]
+position = Vector2(0, 13.5)
+shape = SubResource("RectangleShape2D_gou0j")

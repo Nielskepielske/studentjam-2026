@@ -2,6 +2,8 @@ extends Node
 
 var player_name: String = "Player"
 var naussea_level: float = 0
+var held_item : Texture2D = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -17,3 +19,4 @@ func update_naussea(amount: int) -> void:
 	
 func reset_naussea() -> void:
 	naussea_level = 0
+

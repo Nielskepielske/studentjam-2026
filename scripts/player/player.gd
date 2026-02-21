@@ -47,15 +47,13 @@ func set_animation():
 		animated_sprite_2d.animation = "idle"
 
 func collect_item(item : InvItem):
-	print("picked up item")
-	print(item)
 	if inventory.item:
 		drop_item()
 	inventory.item = item
-	print("inv item is now " + inventory.item.name)
+	PlayerData.held_item = item.texture
+	print("done swapping item")
 	
 func drop_item():
-	print("dropping item")
 	if not inventory or not inventory.item:
 		return null
 	var instance = ItemRegistry.instantiate(inventory.item)
@@ -63,8 +61,8 @@ func drop_item():
 		instance.position = global_position + Vector2(0, 0)
 		get_parent().add_child(instance)
 	inventory.item = null
+	PlayerData.held_item = null
 
 func use_item():
-	print("use item")
 	if not inventory or not inventory.item:
 		return null
