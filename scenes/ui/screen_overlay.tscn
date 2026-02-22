@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://boaac6c42io6p"]
 
 [ext_resource type="Script" uid="uid://cawgrqcavmjg3" path="res://scripts/ui/screen_overlay.gd" id="1_87cwy"]
+[ext_resource type="PackedScene" uid="uid://ck3a14cm67tv1" path="res://scenes/ui/dialogue_label.tscn" id="3_5fxmh"]
 [ext_resource type="Texture2D" uid="uid://cfkaiy43qnl88" path="res://assets/images/items/Water_Bottle.png" id="3_gmmtd"]
 [ext_resource type="Texture2D" uid="uid://lcamy63hr6xn" path="res://assets/images/items/beer-texture-top_1/sprite_0.png" id="3_kmi2i"]
 [ext_resource type="Texture2D" uid="uid://cwlkbamb67xt2" path="res://assets/images/items/beer-texture-top_1/sprite_1.png" id="4_kcdfc"]
@@ -163,6 +164,13 @@ layout_mode = 0
 offset_right = 64.0
 offset_bottom = 64.0
 texture = ExtResource("3_gmmtd")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/MarginContainer2/HBoxContainer" unique_id=355423937]
+layout_mode = 2
+alignment = 1
+
+[node name="DialogueLabel" parent="CanvasLayer/MarginContainer2/HBoxContainer/HBoxContainer2" unique_id=99269883 instance=ExtResource("3_5fxmh")]
+layout_mode = 2
 
 [node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer" unique_id=1464784244]
 anchors_preset = 11

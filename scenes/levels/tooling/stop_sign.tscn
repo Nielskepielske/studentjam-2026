@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b5a06jkqakv78"]
 
 [ext_resource type="Texture2D" uid="uid://d07a8yft4ejj1" path="res://assets/images/player/Free-Homeless-Character-Sprite-Sheets-Pixel-Art/COUPON.png" id="1_a17va"]
-[ext_resource type="Script" uid="uid://duoodsv26esfw" path="res://scripts/levels/stop_sign.gd" id="1_thuu5"]
+[ext_resource type="Script" uid="uid://duoodsv26esfw" path="res://scripts/levels/tooling/stop_sign.gd" id="1_thuu5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_thuu5"]
 size = Vector2(182, 242)
