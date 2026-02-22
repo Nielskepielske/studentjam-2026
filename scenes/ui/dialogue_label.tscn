@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ck3a14cm67tv1"]
+
+[ext_resource type="Script" uid="uid://c420acufdor5c" path="res://scenes/ui/dialogue_label.gd" id="1_g2i2f"]
+
+[sub_resource type="Theme" id="Theme_g2i2f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g2i2f"]
+
+[node name="DialogueLabel" type="Control" unique_id=99269883]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g2i2f")
+
+[node name="Panel" type="Panel" parent="." unique_id=326184340]
+visible = false
+layout_mode = 0
+offset_right = 624.0
+offset_bottom = 113.0
+
+[node name="Button" type="Button" parent="." unique_id=1517078545]
+layout_mode = 0
+offset_right = 626.0
+offset_bottom = 113.0
+
+[node name="Label" type="Label" parent="Button" unique_id=9995899]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 609.0
+offset_bottom = 103.0
+theme = SubResource("Theme_g2i2f")
+text = "Text here"
+label_settings = SubResource("LabelSettings_g2i2f")

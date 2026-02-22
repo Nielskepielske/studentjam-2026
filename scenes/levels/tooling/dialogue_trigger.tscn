@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://6gn402k5yg1q"]
+
+[ext_resource type="Script" uid="uid://gii4ryb4m6h" path="res://scripts/levels/tooling/dialogue_trigger.gd" id="1_essnt"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_rj6yx"]
+a = Vector2(0, -37)
+b = Vector2(0, 34)
+
+[node name="DialogueTrigger" type="Area2D" unique_id=1049977519]
+script = ExtResource("1_essnt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=494313576]
+shape = SubResource("SegmentShape2D_rj6yx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
