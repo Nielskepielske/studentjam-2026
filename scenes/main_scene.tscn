@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://b3w88vkitrxcr" path="res://scenes/policeman.tscn" id="3_7ykc4"]
 [ext_resource type="Script" uid="uid://ds6cx7xpo864k" path="res://scripts/drunkMeterLabel.gd" id="4_pu3yx"]
 [ext_resource type="Script" uid="uid://cob7ww2qu5ig0" path="res://scripts/drunk_system.gd" id="5_gubc5"]
-[ext_resource type="PackedScene" uid="uid://b7xm2by84earb" path="res://scenes/drinks/jager_bottle.tscn" id="7_c16ls"]
+[ext_resource type="PackedScene" uid="uid://b7xm2by84earb" path="res://scenes/obstacle/jager_bottle.tscn" id="7_c16ls"]
 [ext_resource type="PackedScene" uid="uid://3484i3w2v6u3" path="res://scenes/items/water_bottle.tscn" id="8_18nlu"]
-[ext_resource type="PackedScene" uid="uid://dymvdkikfa2pe" path="res://scenes/drinks/cara_bottle.tscn" id="8_c1pb6"]
+[ext_resource type="PackedScene" uid="uid://dymvdkikfa2pe" path="res://scenes/obstacle/cara_bottle.tscn" id="8_c1pb6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ykc4"]
 size = Vector2(286, 126)

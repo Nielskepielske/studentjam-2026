@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://dpw4nh2eqm233" path="res://scenes/items/energy_bottle.tscn" id="11_cw4as"]
 [ext_resource type="AudioStream" uid="uid://cxvrfgj0qkv2y" path="res://assets/sound/music/ebutv_WhatsApp Audio 2026-02-21 at 11.44.35.mp3" id="13_84vya"]
 [ext_resource type="PackedScene" uid="uid://cox57ujy2mxvk" path="res://scenes/obstacle/glassShard.tscn" id="14_cw4as"]
+[ext_resource type="PackedScene" uid="uid://b5a06jkqakv78" path="res://scenes/levels/stop_sign.tscn" id="16_uy53l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kmhl"]
 texture = ExtResource("7_l8ohl")
@@ -641,3 +642,8 @@ parameters/looping = true
 [node name="GlassShard" parent="." unique_id=638677664 instance=ExtResource("14_cw4as")]
 position = Vector2(436.99997, 451)
 scale = Vector2(2.5, 2.5)
+
+[node name="StopSign" parent="." unique_id=862221296 instance=ExtResource("16_uy53l")]
+position = Vector2(3162, 510)
+
+[connection signal="end_of_level_reached" from="StopSign" to="." method="_on_stop_sign_end_of_level_reached"]

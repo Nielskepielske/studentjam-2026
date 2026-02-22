@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bx2oltfaqp65e"]
+
+[ext_resource type="Script" uid="uid://ccfbhwb3hixnv" path="res://scripts/ui/leaderboard.gd" id="1_owmi3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_flqon"]
+bg_color = Color(0.41568628, 0.5764706, 1, 0.09019608)
+
+[node name="Leaderboard" type="Control" unique_id=936619625]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_owmi3")
+
+[node name="Panel" type="Panel" parent="." unique_id=1565475978]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_flqon")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Panel" unique_id=417710596]
+layer = -1
+follow_viewport_enabled = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1818466118]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 19
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1176492071]
+texture_filter = 1
+anchor_mode = 0
+limit_enabled = false
+editor_draw_limits = true

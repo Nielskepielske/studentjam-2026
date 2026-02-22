@@ -11,3 +11,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	camera_2d.position.x = player.position.x
+
+
+func _on_stop_sign_end_of_level_reached() -> void:
+	# display story text ofzo, idk
+	# swith naar ander level ipv main menu
+	get_tree().change_scene_to_file("res://scenes/ui/main_menu.tscn")
