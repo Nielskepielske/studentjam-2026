@@ -8,6 +8,7 @@ extends Control
 @onready var held_item: TextureRect = $CanvasLayer/MarginContainer2/HBoxContainer/HBoxContainer/Panel/held_item
 @onready var timer: Timer = $Timer
 @onready var pukebar: TextureProgressBar = $CanvasLayer/MarginContainer3/VBoxContainer/Control/pukebar
+@onready var dialogue_label: Control = $CanvasLayer/MarginContainer2/HBoxContainer/HBoxContainer2/DialogueLabel
 
 
 # Called when the node enters the scene tree for the first time.
@@ -16,7 +17,7 @@ func _ready() -> void:
 	lbl_drunkness.text = str(DrunkenMovement.drunkAmount)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	lbl_drunkness.text = str(DrunkenMovement.drunkAmount)
 	pukebar.value = PlayerData.naussea_level
 
@@ -25,8 +26,13 @@ func _process(delta: float) -> void:
 			held_item.texture = PlayerData.held_item
 		else:
 			held_item.texture = empty_texture
-			
+
+func on_dialogue_start(filepath : String)->void:
+	print("init dialogue in overlay")
+	dialogue_label.init_dialogue(filepath)
 
 func _on_timer_timeout() -> void:
 	#pukebar.value = pukebar.value + 0.5
 	pass
+	
+	

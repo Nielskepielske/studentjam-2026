@@ -9,10 +9,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if name_input.text != "":
-		button.disabled = false
-	else:
-		button.disabled = true
+	button.disabled = (name_input.text == "")
 
 
 func _on_start_pressed() -> void:
