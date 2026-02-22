@@ -15,6 +15,7 @@ func _process(_delta: float) -> void:
 		queue_free()
 
 func _on_body_entered(body: Node2D) -> void:
+	print("pickup")
 	if body.name == "Player":
 		player_in_range = true
 		player = body
@@ -27,6 +28,7 @@ func _on_body_exited(body: Node2D) -> void:
 
 ## Player picks up the an item from the ground
 func pick_up() -> void:
+	print("pickup")
 	if inv and inv.item:
 		player.collect_item(inv.item)
 		inv.item = null
